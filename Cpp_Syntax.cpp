@@ -147,7 +147,7 @@ int main() {
     //Boolean Expressions
     int c = 10;
     int d = 9;
-    cout << (x > y); // returns 1 (true), because 10 is higher than 9
+    cout << (x > y) << "\n"; // returns 1 (true), because 10 is higher than 9
 
     //Conditional Statements
     int age = 20;
@@ -202,30 +202,91 @@ int main() {
     int day = 4;
     switch (day) {
     case 1:
-        cout << "Monday";
+        cout << "Monday" << "\n";
         break;
     case 2:
-        cout << "Tuesday";
+        cout << "Tuesday" << "\n";
         break;
     case 3:
-        cout << "Wednesday";
+        cout << "Wednesday" << "\n";
         break;
     case 4:
-        cout << "Thursday"; //Outputs "Thursday" (day 4)
+        cout << "Thursday" << "\n"; //Outputs "Thursday" (day 4)
         break;
     case 5:
-        cout << "Friday";
+        cout << "Friday" << "\n";
         break;
     case 6:
-        cout << "Saturday";
+        cout << "Saturday" << "\n";
         break;
     case 7:
-        cout << "Sunday";
+        cout << "Sunday" << "\n";
         break;
     default:
-        cout << "Looking forward to the Weekend"; //Outputs "Looking forward to the Weekend"
+        cout << "Looking forward to the Weekend" << "\n"; //Outputs "Looking forward to the Weekend"
     }
+    
+    // //while loop
+    int countdown = 3;
+
+    while (countdown > 0) {
+    cout << countdown << "\n";
+    countdown--;
+    }
+
+    cout << "Happy New Year!!\n";
+
+    //do-while loop
+    int i = 10;
+    do {
+    cout << "i is " << i << "\n";
+    i++;
+    } while (i < 5); 
   
+    //for loop 
+    for (int j = 1; j <= 5; j++) {
+        cout << "j is " << j << "\n"; 
+    }
+
+    //nested loop (for inside for)
+    for (int row = 1; row <= 3; row++) {
+        for (int col = 1; col <= 3; col++) {
+            cout << row << "," << col << " ";
+        }
+        cout << "\n"; 
+    }
+
+    //for-each loop
+    int numbers[5] = {10, 20, 30, 40, 50};
+    for (int n : numbers) {
+        cout << n << " "; 
+    }
+    cout << "\n";
+
+    //Examples of Loops
+    for (int i = 0; i <= 100; i += 10) {
+    cout << i << "\n";
+    } //counts to 100 by tens
+
+    for (int i = 0; i <= 10; i = i + 2) {
+    cout << i << "\n";
+    } //print even numbers between 0 and 10 (inclusive)
+
+    for (int i = 1; i <= 10; i = i + 2) {
+    cout << i << "\n";
+    } //print odd numbers
+
+    for (int i = 2; i <= 512; i *= 2) {
+    cout << i << "\n";
+    } //print the powers of 2 up to 512
+
+    int number = 2;
+    int l;
+
+    for (l = 1; l <= 10; l++) {
+    cout << number << " x " << l << " = " << number * l << "\n";
+    } //multiplication table for a specified number
+
     
     return 0;
 }
