@@ -1,4 +1,6 @@
 #include<bits/stdc++.h>
+// Include the cmath library
+#include <cmath>
 using namespace std;
 
 int main() {
@@ -100,29 +102,130 @@ int main() {
     string FirstName = "John";
     string LastName = "Doe";
     string FullName = FirstName + " " + LastName;
-    cout << FullName;
+    cout << FullName << "\n";
 
     //Append can also be used instead of string concatenation
     string firstName = "John ";
     string lastName = "Doe";
     string fullName = firstName.append(lastName);
-    cout << fullName;
+    cout << fullName << "\n";
 
     //String Length
     string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    cout << "The length of the txt string is: " << txt.size(); //txt.length() can also be used 
+    cout << "The length of the txt string is: " << txt.size() << "\n"; //txt.length() can also be used 
 
     //Access Strings
     string myString = "Hello";
-    cout << myString; // Outputs Hello
+    cout << myString << "\n"; // Outputs Hello
 
-    cout << myString.at(0);  // First character
-    cout << myString.at(1);  // Second character
-    cout << myString.at(myString.length() - 1);  // Last character
+    cout << myString.at(0) << "\n";  // First character
+    cout << myString.at(1) << "\n";  // Second character
+    cout << myString.at(myString.length() - 1) << "\n";  // Last character
 
     myString.at(0) = 'J';
-    cout << myString;  // Outputs Jello
+    cout << myString << "\n";  // Outputs Jello
 
+    //cmath librabry
+    cout << max(5, 10) << "\n";
+    cout << min(5, 10) << "\n";
+    cout << sqrt(64) << "\n";
+    cout << round(2.6) << "\n";
+    cout << log(2) << "\n";
 
+    //Boolean Values
+    bool isCodingFun = true;
+    bool isFishTasty = false;
+
+    cout << boolalpha; // enable printing "true"/"false"
+
+    cout << isCodingFun << "\n";  // Outputs 1 (true)
+    cout << isFishTasty << "\n"; // Outputs 0 (false)
+
+    cout << noboolalpha; // reset to 1/0
+    cout << isCodingFun << "\n";  // Outputs 1 
+    
+    //Boolean Expressions
+    int c = 10;
+    int d = 9;
+    cout << (x > y); // returns 1 (true), because 10 is higher than 9
+
+    //Conditional Statements
+    int age = 20;
+    if (age >= 18) {
+        cout << "You are an adult." << "\n"; //Simple if
+    }
+
+    int marks = 40;
+    if (marks >= 50) {
+        cout << "Pass" << "\n";
+    } else {
+        cout << "Fail" << "\n"; //if-else
+    }
+
+    int score = 75;
+    if (score >= 90) {
+        cout << "Grade A" << "\n";
+    } else if (score >= 75) {
+        cout << "Grade B" << "\n";
+    } else if (score >= 50) {
+        cout << "Grade C" << "\n";
+    } else {
+        cout << "Grade F" << "\n"; //else if ladder
+    }
+
+    int temperature = 30;
+    bool isRaining = false;
+    if (temperature > 25) {
+        if (isRaining) {
+            cout << "Hot and rainy" << "\n";
+        } else {
+            cout << "Hot and sunny" << "\n"; //Nested if
+        }
+    }
+
+    int Day = 6;
+    bool isHoliday = true;
+    if (Day == 6 && isHoliday) {
+        cout << "Weekend holiday!" << "\n"; //if with logical AND (&&)
+    }
+
+    char grade = 'B';
+    if (grade == 'A' || grade == 'B') {
+        cout << "Good performance" << "\n"; //if with logical OR (||)
+    }
+
+    int num = 7;
+    string result = (num % 2 == 0) ? "Even" : "Odd";
+    cout << result << "\n"; //Ternary operator (short if-else)
+
+    //Switch Statements
+    int day = 4;
+    switch (day) {
+    case 1:
+        cout << "Monday";
+        break;
+    case 2:
+        cout << "Tuesday";
+        break;
+    case 3:
+        cout << "Wednesday";
+        break;
+    case 4:
+        cout << "Thursday"; //Outputs "Thursday" (day 4)
+        break;
+    case 5:
+        cout << "Friday";
+        break;
+    case 6:
+        cout << "Saturday";
+        break;
+    case 7:
+        cout << "Sunday";
+        break;
+    default:
+        cout << "Looking forward to the Weekend"; //Outputs "Looking forward to the Weekend"
+    }
+  
+    
     return 0;
 }
