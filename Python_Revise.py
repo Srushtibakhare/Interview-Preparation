@@ -52,10 +52,10 @@ print (p * q)  # multiplication
 print (p % q)  # remainder
 print (p // q) # floor division
 print (p ** q) # power
-print (p > q)  #greater than
-print (p < q)  #less than
-print (p == q) #equal to
-print (p != q) #not equal to
+print (p > q)  # greater than
+print (p < q)  # less than
+print (p == q) # equal to
+print (p != q) # not equal to
 
 #casting
 m = 8
