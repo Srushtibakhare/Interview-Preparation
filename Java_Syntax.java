@@ -22,7 +22,7 @@ public class Java_Syntax {
         String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         System.out.println("The length of the txt string is: " + txt.length()); //string length
 
-        //string methoda
+        //string methods
         String text = "Hello World";
         System.out.println(text.toUpperCase());   // Outputs "HELLO WORLD"
         System.out.println(text.toLowerCase());   // Outputs "hello world"
@@ -249,5 +249,54 @@ public class Java_Syntax {
             System.out.println(" Inner: " + f); // Executes 6 times (2 * 3)
         }
         } 
+
+        //for-each Loop
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+        for (String car : cars) {
+        System.out.println(car);
+        }
+
+        //Break and Continue statements
+        for (int u = 0; u < 10; u++) { //Break
+            if (u == 4) {
+                break;
+            }
+            System.out.println(u);
+        }
+
+        for (int v = 0; v < 10; v++) { //Continue
+            if (v == 4) {
+                continue;
+            }
+            System.out.println(v);
+        }
+
+        for (int w = 0; w < 6; w++) { //Combined break and continue
+            if (w == 2) {
+                continue;
+            }
+            if (w == 4) {
+                break;
+            }
+            System.out.println(w); 
+        }
+
+        //Arrays
+        String[] vehicle = new String[4]; // size is 4
+        vehicle[0] = "Volvo";
+        vehicle[1] = "BMW";
+        vehicle[2] = "Ford";
+        vehicle[3] = "Mazda";
+        //String[] vehicle = {"Volvo", "BMW", "Ford", "Mazda"};
+        System.out.println(vehicle[0]); // Outputs Volvo
+        System.out.println(vehicle.length); // Outputs 4
+
+        //Multidimensional Arrays
+        int[][] myNumbers = { {1, 4, 2}, {3, 6, 8, 5, 2} };
+
+        System.out.println("Rows: " + myNumbers.length);             // 2
+        System.out.println("Cols in row 0: " + myNumbers[0].length); // 3
+        System.out.println("Cols in row 1: " + myNumbers[1].length); // 5
     }
 }
